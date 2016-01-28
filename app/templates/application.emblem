@@ -3,16 +3,18 @@
     .pane-group
       .pane-sm.sidebar
         nav.nav-group
-          a.nav-group-item.active
+          a.nav-group-item
             span.icon.icon-users
             | Encounters
           a.nav-group-item
             span.icon.icon-pencil
             | Adventures
-          a.nav-group-item
+          link-to 'characters' class='nav-group-item'
             span.icon.icon-user
             | Characters
           a.nav-group-item
             span.icon.icon-book
             | Journal
       .pane
+        .padded-more
+          outlet
